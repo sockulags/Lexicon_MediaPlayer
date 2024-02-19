@@ -3,17 +3,32 @@ import Navbar from "./Navbar";
 import SongInfo from "./SongInfo";
 import SongDuration from "./SongDuration";
 import ControlButtons from "./ControlButtons";
-import image from "../img/Candyman.jpg";
+import { songs, ISong } from "../data/Songs";
 import "./MediaPlayer.css";
 
-function MediaPlayer() {
+interface MediaPlayerProps {
+  activeSong: ISong | null;
+}
+
+function MediaPlayer({ activeSong }: MediaPlayerProps) {
+    if(!activeSong){
+        return (
+            <main>
+            <Navbar/>
+            <PlayingSongImage imgSource={songs[0].imgSrc}/>
+            <SongInfo title={songs[0].title} artist={songs[0].artist}/>
+            <SongDuration songLength={songs[0].songLength} currentTime={songs[0].currentTime}/>
+            <ControlButtons/>
+          </main>
+        );
+    } 
   return (
     <main>
-    <Navbar/>
-    <PlayingSongImage imgSource={image}/>
-    <SongInfo title={"A Rocket to the mooon"} artist={"Like we used to"}/>
-    <SongDuration songLength={214} currentTime={20}/>
-    <ControlButtons/>
+      <Navbar/>
+      <PlayingSongImage imgSource={activeSong.imgSrc}/>
+      <SongInfo title={activeSong.title} artist={activeSong.artist}/>
+      <SongDuration songLength={activeSong.songLength} currentTime={activeSong.currentTime}/>
+      <ControlButtons/>
     </main>
   );
 }

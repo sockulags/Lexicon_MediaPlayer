@@ -1,21 +1,14 @@
 import "./PlaylistItem.css";
-
-interface ISong {
-  id: number;
-  artist: string;
-  title: string;
-  imgSrc: string;
-  songLength: number; 
-  currentTime: number;  
-}
+import { ISong } from "../data/Songs"
 
 interface PlaylistItemProps {
   song: ISong;
+  onActiveSongChange: (id: number) => void;
 }
 
-function PlaylistItem({ song }: PlaylistItemProps){
+function PlaylistItem({ song, onActiveSongChange }: PlaylistItemProps) {
   return (
-    <article className="song-item">
+    <article className="song-item" onClick={() => onActiveSongChange(song.id)}>
       <figure><img src={song.imgSrc} alt={`${song.artist} - ${song.title}`} /></figure>
       <div className="song-info">
         <p className="upper-text">{song.artist}</p>

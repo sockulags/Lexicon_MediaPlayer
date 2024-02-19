@@ -7,6 +7,11 @@
     justify-content: flex-start;
     padding-block: 10px;
   }
+
+  .song-item:hover{
+    background-color: rgb(30, 43, 43);
+    cursor: pointer;
+  }
   
 .song-item figure {
     margin: 0;
@@ -40,6 +45,4 @@
     cursor: pointer;
   }
   
-  .song-item:first-child .play {
-    opacity: 1;
-  }
+  

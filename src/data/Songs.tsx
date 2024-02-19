@@ -6,16 +6,16 @@ import dakota from "../img/ragnbone_man.jpg";
 import imagineDraongs from "../img/imagine_dragon_shots.jpg";
 
 
-type Song = {
+export interface ISong {
     id: number;
     artist: string;
     title: string;
     imgSrc: string;
     songLength: number; 
-    currentTime: number; 
-  };
+    currentTime: number;  
+  }
   
-  export const songs: Song[] = [
+  export const songs: ISong[] = [
     {
       id: 1,
       artist: 'A Rocket to the Moon',

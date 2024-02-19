@@ -2,12 +2,12 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    max-width: 400px;
+   width: 18rem;
     margin-bottom: 20px;
 }
 
 .image-container img {
     position: relative;  
-    width: 80%;
+    width: 100%;
 }
 
