@@ -5,7 +5,15 @@
 }
 
 
-
 span:hover {
     color: grey;    
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    width:10px;
+    color: #fff;
 }
