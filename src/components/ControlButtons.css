@@ -1,0 +1,24 @@
+.buttonsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.buttonsContainer span{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+.buttonsContainer :nth-child(3){
+    font-size: 4rem;
+}
+
+.buttonsContainer :nth-child(2){
+    padding-left: 1rem;
+}
+
+.buttonsContainer :nth-child(4){
+    padding-right: 1rem;
+}

@@ -1,0 +1,25 @@
+.timeline-container {
+    display: flex;   
+    align-items: center;
+    justify-content: center;   
+    column-gap: 1rem;
+    margin: 20px;   
+    }
+
+  .timeline-container .outer-timeline {
+    background-color: black;
+    border-radius: 0.6rem;
+    height: 0.6rem;
+    width: 20rem;  
+ }
+
+ .timeline-container .inner-timeline {
+    background-color: white;
+    border-radius: 0.6rem;
+    height: 0.6rem;
+ }
+
+ .timeline-container span:hover{
+    color: #FFF;
+    cursor: default;
+ }

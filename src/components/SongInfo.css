@@ -1,0 +1,40 @@
+.song-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+    margin-bottom: 2rem;
+}
+
+.song-info-container .song-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 18rem;
+}
+
+.song-info-container .song-info p{
+    margin: 1px;
+}
+
+.song-info-container span{
+    cursor: pointer;
+}
+
+.song-info-container .song-info .upper-text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.song-info-container .song-info .upper-text,
+.song-info-container .song-info .lower-text{
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.song-info-container .song-info .lower-text,
+.song-info-container span{
+    opacity: 0.5;
+ }
