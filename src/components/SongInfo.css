@@ -1,17 +1,18 @@
 .song-info-container{
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     column-gap: 25px;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;   
+    width: 80%;
+    max-width: 400px;
 }
 
 .song-info-container .song-info{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 0;
-    width: 18rem;
+    align-items: center;     
 }
 
 .song-info-container .song-info p{

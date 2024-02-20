@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 import MediaPlayer from './components/MediaPlayer';
 import Playlist from './components/Playlist';
-import { songs } from './data/Songs'; // Assuming ISong is correctly exported
+import { songs } from './data/Songs';
 
 export function App() {
   const [activeSongId, setActiveSongId] = useState<number | null>(null);
@@ -13,8 +13,7 @@ export function App() {
     const activeSong = songs.find(song => song.id === activeSongId) || null;
 
   return (
-    <>
-      {/* Pass the activeSong object to MediaPlayer */}
+    <>   
       <MediaPlayer activeSong={activeSong} />
       <Playlist songs={songs} onActiveSongChange={handleActiveSongChange} />
     </>

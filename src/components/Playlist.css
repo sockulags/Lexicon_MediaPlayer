@@ -1,3 +1,8 @@
 .play-list{
+    margin: 0 auto;
     margin-top: 2rem;
+    max-width: 600px;
+    width: 100%;
+    min-width: 300px;
+
 }

@@ -1,11 +1,12 @@
 .song-item {
     display: flex;
     align-items: center;
-    padding: 1rem;
     border-top: 2px solid #ffffff;
     gap: 20px;
-    justify-content: flex-start;
+    justify-content: space-between;
+    text-align: left;
     padding-block: 10px;
+    padding: 10px;
   }
 
   .song-item:hover{
@@ -20,6 +21,8 @@
   
  .song-item figure img {
     width: 100%;
+    min-width:  50px;
+
   }
   .song-item .song-info .upper-text{
     font-size: 1rem;
@@ -36,13 +39,20 @@
     overflow: hidden; 
     text-overflow: ellipsis;
   }
+
+  .song-item .song-info{
+    width: 70%;
+  }
   
  .song-item .play {
-    opacity: 0.3;
-    position: absolute;
+    opacity: 0.3; 
     right: 25px;
     font-size: 2rem;
     cursor: pointer;
   }
   
-  
+  @media screen and (max-width: 480px){
+    .song-item .play{
+        font-size: 1.5;
+    }
+  }
