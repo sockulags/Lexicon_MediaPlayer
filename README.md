@@ -1,5 +1,7 @@
 # React Media Player
 
+[Live Demo](https://sockulags.github.io/Lexicon_MediaPlayer/)
+
 Create an interface for a media player.
 
 In this exercise you will create a media player using React and TypeScript.
@@ -38,4 +40,3 @@ Then it's use like this inside your components:
 ```
 
 The "play-arrow" can of course be change to any other text belonging to an icon.
-# Lexicon_MediaPlayer
